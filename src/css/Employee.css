@@ -1,0 +1,156 @@
+
+.Employee .img{
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.Employee img{
+    border-radius: 50%;
+    padding: 0.3rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    background-color: #f1f1f1;
+    border: 1px solid #e4e1e1;
+  }
+.Employee .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Employee .info p{
+    color: rgb(88, 82, 82);
+    font-size: 1.1rem;
+}
+.Employee .info .vertical{
+   width: 1px;
+   height: 1rem;
+   margin: 0rem 2.5rem;
+}
+.Employee .wrapper{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 3rem;
+    justify-content: center;
+} 
+.verticalLine{
+    height: 18rem;
+    border: 1px dashed #e4e1e1;
+    width: 1px;
+    margin: 0rem 6rem;
+}
+.Employee .deduction .container .price,
+.Employee .deduction .container,
+.Employee .earnings .container,
+.Employee .earnings .container .price{
+    display: flex;
+    align-items: center;
+} 
+.Employee .container h3{
+    font-size: 1.25rem;
+}
+.mobile{
+    display: none;
+}
+.Employee .deduction,
+.Employee .earnings{
+    width: 23rem;
+}
+.Employee .deduction .total,
+.Employee .earnings .total{
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+}
+.Employee .earnings .total{
+    border: 1px solid #38ef7d;
+    color: #38ef7d;
+}
+.Employee .deduction .total{
+    color: red;
+    border: 1px solid red;
+}
+
+.earnings h2{
+}
+.Employee .earnings h3{
+    /* color: green; */
+}
+.Employee  .container{
+    margin:1rem 0rem;
+}
+.Employee  .container .price{
+    margin-left: auto;
+    font-size: 0.95rem;
+}
+@media (max-width:1200px) {
+    .verticalLine{
+        margin: 0rem 4rem;
+    }
+}
+@media (max-width:900px) {
+    .verticalLine{
+        margin: 0% 2.5%;
+    }
+    .Employee .info .vertical{
+        margin: 0rem 1rem;
+     }
+     .laptop{
+        display: none;
+     }
+     .mobile{
+        display: block;
+    }
+    .Employee .deduction,
+    .Employee .earnings{
+        width: 45%;
+    }
+}
+@media (max-width:650px) {
+    .verticalLine{
+        height: 1px;
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem ;
+        margin-bottom: 3rem ;
+
+    }
+    .Employee .info .vertical{
+        margin: 0rem 1rem;
+     }
+    .Employee .deduction,
+    .Employee .earnings{
+        width: 75%;
+        margin: auto;
+    }
+    .Employee .wrapper{
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        
+    } 
+    .Employee .deduction .total,
+    .Employee .earnings .total{
+        padding:0.8rem 0.5rem;
+        margin-top: 1.5rem;
+    }
+}
+@media (max-width:510px) {
+    .Employee .info .vertical{
+        margin: 0rem 0.8rem;
+     }
+}
+@media (max-width:427px) {
+    .Employee .info{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width:350px) {
+    .Employee .deduction,
+    .Employee .earnings{
+        width: 90%;
+    }
+}

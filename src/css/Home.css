@@ -1,0 +1,260 @@
+
+  nav{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e4e1e1;
+
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  nav .admin,
+  nav .headindInfo{
+    display: flex;
+    align-items: center;
+  }
+ 
+  nav .img{
+    width: 2rem;
+    height: 2rem;
+  }
+  nav .headindInfo .notification img{
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  nav .admin {
+      margin-left: 1rem;
+  }
+  nav .admin img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.3rem;
+    border: 1px solid #e4e1e1;
+  }
+
+  main{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.Home  button{
+    width: fit-content;
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+.search{
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  text-align: end;
+  justify-content: end;
+}
+.search button{
+    background-color: #38ef7d;
+    padding: 0.638rem 0.8rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    color: white;
+}
+.search button:hover {
+    background: #17cf5e;
+  }
+.search input{
+    padding:0.53rem 0.7rem;
+    width: 16rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem  0rem  0rem  0.2rem;
+    outline: none;
+    border: 1px solid #e4e1e1;
+}
+table{
+    width: 100%;
+    margin: auto;
+    border: 1px solid #e4e1e1;
+  border-collapse: collapse;
+}
+  .Home table .delete,
+  .noResult button{
+    padding: 0.35rem 0.8rem;
+    border:  1px solid red;
+    color: red;
+    background-color: white;
+  }
+  .Home table .view{
+    padding: 0.35rem 0.8rem;
+    border:  1px solid #38ef7d;
+    color: #38ef7d;
+    background-color: white;
+  }
+  .Home table .view:hover{
+    background: #17cf5e;
+    color: white;
+  }
+  .Home table .delete:hover,
+  .noResult button:hover {
+    background: red;
+    color: white;
+  }
+  tbody tr td {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    padding:0.75rem 1rem;
+    border-top: 1px solid #e4e1e1;
+  }
+  
+  thead tr th {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0,0.8);
+    padding: 0.9rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .noResult{
+    width: 25rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .noResult .btnContainer{
+    text-align: center;
+  }
+  @media (max-width: 927px) {
+    main{
+        width: 100%;
+    }
+    .search{
+      margin-right: 2rem;
+    }
+  }
+   @media (max-width: 682px) {
+    thead tr th {
+    padding: 0.9rem 0.3rem;
+    }
+     tbody tr td {
+    padding:0.75rem 0rem;
+    padding-left: 0.5em;
+    }
+    nav .headindInfo img{
+      width: 1.55rem;
+      height: 1.55rem;
+    }
+    nav .headindInfo .notification img{
+      margin-top: 0.3rem;
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    nav .admin {
+        margin-left: 0.3rem;
+    }
+  } 
+   @media (max-width: 590px) {
+      thead tr th {
+        font-size: 1.1rem;
+        padding: 0.9rem 0rem;
+        padding-left: 0.35rem;
+      }
+     tbody tr td .view{
+      margin-right: 0.3rem;
+  }
+  } 
+  @media (max-width: 520px) {
+    thead tr th td{
+    /* padding-right: 0.9rem; */
+      margin-left: 1rem;
+    }
+    .noResult{
+      width: 90%;
+    }
+    nav .admin {
+      margin-left: 0rem;
+  }
+  }
+   @media (max-width: 439px) {
+    .search{
+      margin-right: 1.2rem;
+    }
+    .search input{
+     width: 14rem;
+    }
+  } 
+   
+   @media (max-width: 409px) {
+      thead tr th {
+        font-size: 1rem;
+      }
+     tbody tr td {
+      font-size: 0.88rem;
+     }
+     .Home table .delete,
+     .Home table .view{
+      font-size: 0.73rem;
+      padding: 0.35rem 0.35rem;
+     }
+     nav{
+      padding: 1rem 0.35rem;
+     }
+    
+  } 
+  @media (max-width: 341px) {
+    .search{
+      margin-right: 1rem;
+    }
+    .search input{
+     width: 11.5rem;
+    }
+    thead tr th {
+      font-size: 0.9rem;
+    }
+   tbody tr td {
+    font-size: 0.83rem;
+   }
+   .Home table .delete,
+   .Home table .view{
+    font-size: 0.7rem;
+    padding: 0.3rem ;
+   }
+}
+  @media (max-width: 319px) {
+    .search input{
+     width: 10.5rem;
+    }
+   tbody tr td {
+    font-size: 0.78rem;
+   }
+   nav h2{
+    font-size: 1.2rem;
+   }
+   nav h4{
+    font-size: 0.9rem;
+   }
+   .Home table .delete,
+   .Home table .view{
+    font-weight: normal;
+    font-size: 0.65rem;
+
+    padding: 0.3rem 0.2rem;
+   }
+}
+  @media (max-width: 302px) {
+   tbody tr td {
+    font-size: 0.73rem;
+   }
+   .Home table .delete,
+   .Home table .view{
+    font-weight: normal;
+    font-size: 0.58rem;
+    padding: 0.3rem 0.15rem;
+   }
+}
