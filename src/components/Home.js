@@ -46,16 +46,16 @@ const Home = ({setallEmployees,allEmployees}) => {
                 <nav>
                     <h2>NLPC PFA</h2>
                     <div className="headindInfo">
-                    <div className="img notification"><img src="/image/bell.png" alt="bell" /></div>
+                    <figure className="img notification"><img src="/image/bell.png" alt="bell" /></figure>
                     <div className="admin">
                         <h4>Afolabi james</h4>
-                        <div className="img"><img src="/image/admin.jpeg" alt="admin" /></div>
+                        <figure className="img"><img src="/image/admin.jpeg" alt="admin" /></figure>
                     </div>
                     </div>
                 </nav>
                 <main>
                     <div className='searchContainer'>
-                        <div>{Results && <div className="img" onClick={handleCancelSearch}><img src="/image/back.png" alt="back" /></div>}</div>
+                        <div>{Results && <figure className="img" onClick={handleCancelSearch}><img src="/image/back.png" alt="back" /></figure>}</div>
                         <div className='search'>
                             <input type="text" value={search} placeholder='type name' onInput={(e)=>setsearch(e.target.value)}/>
                             <button onClick={handleSearch} >Search</button>
@@ -91,11 +91,12 @@ const Home = ({setallEmployees,allEmployees}) => {
                             noResult &&
                              <div className='noResult'> 
                                 <h2>Oops, looks like we could not find any result</h2>
-                                <div className='noResultImg'><img src="/image/undraw_No_data_re_kwbl.png" alt="no result" /></div>
+                                <figure className='noResultImg'><img src="/image/undraw_No_data_re_kwbl.png" alt="no result" /></figure>
                                 <div className="btnContainer"><button onClick={handleCancelSearch}>Cancel search</button></div>
                             </div>
                         }
                 </main>
+                {/* <h1>home</h1> */}
             </div>
    </div>
   )
