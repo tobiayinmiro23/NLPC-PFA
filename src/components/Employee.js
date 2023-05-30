@@ -17,7 +17,7 @@ const Employee = () => {
     
   return (
    <div className='Employee'>
-     <div className="img"><img src={user.img} alt="" /></div>
+     <div className="img"><img src={user.img} alt="employee img" /></div>
     <div className="info">
         <p>{user.name}</p>
         <p className='vertical'></p>
