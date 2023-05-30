@@ -46,16 +46,16 @@ const Home = ({setallEmployees,allEmployees}) => {
                 <nav>
                     <h2>NLPC PFA</h2>
                     <div className="headindInfo">
-                    <div className="img notification"><img src="/image/bell.png" alt="" /></div>
+                    <div className="img notification"><img src="/image/bell.png" alt="bell" /></div>
                     <div className="admin">
                         <h4>Afolabi james</h4>
-                        <div className="img"><img src="/image/admin.jpeg" alt="" /></div>
+                        <div className="img"><img src="/image/admin.jpeg" alt="admin" /></div>
                     </div>
                     </div>
                 </nav>
                 <main>
                     <div className='searchContainer'>
-                        <div>{Results && <div className="img" onClick={handleCancelSearch}><img src="/image/back.png" alt="" /></div>}</div>
+                        <div>{Results && <div className="img" onClick={handleCancelSearch}><img src="/image/back.png" alt="back" /></div>}</div>
                         <div className='search'>
                             <input type="text" value={search} placeholder='type name' onInput={(e)=>setsearch(e.target.value)}/>
                             <button onClick={handleSearch} >Search</button>
@@ -96,7 +96,6 @@ const Home = ({setallEmployees,allEmployees}) => {
                             </div>
                         }
                 </main>
-                {/* <h1>home</h1> */}
             </div>
    </div>
   )
