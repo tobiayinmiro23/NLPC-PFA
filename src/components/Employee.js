@@ -14,10 +14,10 @@ const Employee = () => {
         })
         setuser(result[0])
     },[])
-    
+
   return (
-   <div className='Employee'>
-     <div className="img"><img src={user.img} alt="employee img" /></div>
+   <main className='Employee'>
+     <figure className="img"><img src={user.img} alt="employee img" /></figure>
     <div className="info">
         <p>{user.name}</p>
         <p className='vertical'></p>
@@ -26,7 +26,7 @@ const Employee = () => {
         <p>{user.jobposition}</p>
     </div>
     <div className="wrapper">
-    <div className="deduction">
+    <section className="deduction">
         <h2>Deductions</h2>
        <div>
        </div>
@@ -66,9 +66,9 @@ const Employee = () => {
                 <p>{user.totalDeduction}</p>
             </div>
         </div>
-    </div>
+    </section>
     <div className="verticalLine"></div>
-    <div className="earnings">
+    <section className="earnings">
         <h2>Earnings</h2>
         <div className="container">
             <h4>Basic</h4>
@@ -119,9 +119,9 @@ const Employee = () => {
                 <p>{user.salary}</p>
             </div>
         </div>
+    </section>
     </div>
-    </div>
-   </div>
+   </main>
   )
 }
 
